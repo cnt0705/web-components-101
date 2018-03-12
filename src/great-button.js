@@ -1,11 +1,11 @@
-export default class NiceButton extends HTMLElement {
+export default class GreatButton extends HTMLElement {
   constructor() {
     super();
   }
 
   connectedCallback() {
     this.innerHTML = `
-    <button>Nice button</button>
+    <button>Great Button</button>
     `;
   }
 }

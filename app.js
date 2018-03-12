@@ -1,13 +1,7 @@
-class niceButton extends HTMLElement {
-  constructor() {
-    super();
-  }
+import NiceButton from './src/nice-button.js';
+import GreatButton from './src/great-button.js';
+import AmazingButton from './src/amazing-button.js';
 
-  connectedCallback() {
-    this.innerHTML = `
-    <button>Really nice button</button>
-    `;
-  }
-}
-
-customElements.define('nice-button', niceButton);
+customElements.define('nice-button', NiceButton);
+customElements.define('great-button', GreatButton);
+customElements.define('amazing-button', AmazingButton);
