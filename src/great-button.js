@@ -4,8 +4,10 @@ export default class GreatButton extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = `
-    <button>Great Button</button>
+    this.attachShadow({
+      mode: 'open'
+    }).innerHTML = `
+    <button><slot></slot></button>
     `;
   }
 }
