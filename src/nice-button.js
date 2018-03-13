@@ -5,7 +5,7 @@ export default class NiceButton extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <button>Nice button</button>
+      <button>Nice button</button>
     `;
   }
 }

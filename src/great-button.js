@@ -7,7 +7,7 @@ export default class GreatButton extends HTMLElement {
     this.attachShadow({
       mode: 'open'
     }).innerHTML = `
-    <button><slot></slot></button>
+      <button><slot></slot></button>
     `;
   }
 }
