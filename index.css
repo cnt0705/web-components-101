@@ -1,3 +1,4 @@
-button {
+.button {
   background-color: skyblue;
+  cursor: pointer;
 }
