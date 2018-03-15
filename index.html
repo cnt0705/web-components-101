@@ -11,19 +11,27 @@
 <body>
   <main>
     <!-- Shadow DOM -->
-    <button id="not-bad">Not Bad :/</button>
+    <div id="not-bad"></div>
 
     <!-- Custom Elements -->
     <nice-button></nice-button>
 
     <!-- Custom Elements + Shadow DOM -->
-    <great-button>Such a Great Button! ;)</great-button>
+    <great-button>Such a great button ;)</great-button>
 
     <!-- Custom Elements + Templates -->
     <amazing-button></amazing-button>
+    <template id="template">
+      <style>
+        .button {
+          background-color: pink;
+        }
+      </style>
+      <button class="button">Look at this amazing button ;P</button>
+    </template>
 
     <!-- Custom Elements + Shadow DOM + Interactive -->
-    <wonderful-button></wonderful-button>
+    <wonderful-button>You wanna push me ? X)</wonderful-button>
   </main>
 
   <!-- ES Modules -->

@@ -1,9 +1,9 @@
-export default class GreatButton extends HTMLElement {
+export default class WonderfulButton extends HTMLElement {
   static get template() {
     return `
       <style>
         button {
-          background-color: blue;
+          background-color: green;
           color: white;
         }
       </style>
@@ -18,9 +18,12 @@ export default class GreatButton extends HTMLElement {
   }
 
   connectedCallback() {
-    // Attaches a shadow DOM tree to the specified element
     this.attachShadow({
       mode: 'open'
-    }).innerHTML = GreatButton.template;
+    }).innerHTML = WonderfulButton.template;
+
+    this.addEventListener('click', e => {
+      alert('You did it!')
+    });
   }
 }

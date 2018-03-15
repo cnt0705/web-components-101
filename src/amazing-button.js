@@ -4,8 +4,7 @@ export default class AmazingButton extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = `
-      <button>Amazing Button</button>
-    `;
+    const template = document.getElementById('template');
+    this.appendChild(template.content);
   }
 }
