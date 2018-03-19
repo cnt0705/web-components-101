@@ -3,8 +3,18 @@ export default class WonderfulButton extends HTMLElement {
     return `
       <style>
         button {
-          background-color: green;
-          color: white;
+          display: block;
+          padding: 16px;
+          border: none;
+          border-radius: 5px;
+          background-color: #352d39;
+          color: #fff;
+          font-size: 2.0rem;
+          cursor: pointer;
+        }
+
+        button:hover {
+          opacity: 0.8;
         }
       </style>
       <button>

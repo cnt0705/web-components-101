@@ -3,8 +3,11 @@ export default class GreatButton extends HTMLElement {
     return `
       <style>
         button {
-          background-color: blue;
-          color: white;
+          display: block;
+          padding: 24px;
+          border: #333 2px dotted;
+          background-color: #d1ede8;
+          cursor: pointer;
         }
       </style>
       <button>

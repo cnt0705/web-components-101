@@ -1,5 +1,28 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 50px;
+  font-size: 2.0rem;
+  color: #333;
+}
+
 button {
   display: block;
-  background-color: skyblue;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6978;
+  color: #fff;
   cursor: pointer;
+}
+
+p {
+  margin: 50px 0 10px;
+  font-weight: bold;
+}
+
+p:first-child {
+  margin-top: 0;
 }
